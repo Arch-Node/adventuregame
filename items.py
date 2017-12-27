@@ -14,7 +14,7 @@ class Gold(Item):
     def __init__(self, amt):
         self.amt = amt
         super().__init__(name="Gold",
-                         description="A group of coins worth {} gold.".format(str(self.amt)),
+                         description="Coins worth {} gold.".format(str(self.amt)),
                          value=self.amt)
 
 

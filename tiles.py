@@ -159,12 +159,18 @@ class BearRoom(EnemyRoom):
             The body of a dead bear lies in the corner. If you are lost too long you might need to make a coat.
             """
 
-class FindGoldRoom(LootRoom):
+class FindGoldRoom(MapTile):
     def __init__(self, x, y):
-        super().__init__(x, y, items.Gold(20))
+        super().__init__(x, y)
+
+    def modify_player(self, player):
+        if self.is_loot:
+            pass
+        else:
+            player.gold +=5
 
     def intro_text(self):
-        if self.is_loot == True:
+        if self.is_loot:
             return """
             Another unremarkable part of the cave. You must forge onwards.
             """
@@ -172,7 +178,7 @@ class FindGoldRoom(LootRoom):
             self.is_loot = True
             return """
             You see some gold in the corner of the room.
-            You got 5 gold.
+            You found 5 gold.
             """
 
 
@@ -181,7 +187,7 @@ class FindDaggerRoom(LootRoom):
         super().__init__(x, y, items.Dagger())
 
     def intro_text(self):
-        if self.is_loot == True:
+        if self.is_loot:
             return """
             The shadows dance on the cave walls and remind you why you don't like caves.
             """

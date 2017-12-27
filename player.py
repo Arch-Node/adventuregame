@@ -6,7 +6,8 @@ import random
 class Player:
     def __init__(self):
         self.hp = 100
-        self.inventory = [items.Gold(15), items.Rock()]
+        self.gold
+        self.inventory = [items.Gold(self.gold), items.Rock()]
         self.location_x, self.location_y = world.starting_position
         self.victory = False
 
