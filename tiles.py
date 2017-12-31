@@ -2,6 +2,7 @@ import items
 import enemies
 import actions
 import world
+import dice
 
 
 class MapTile:
@@ -57,7 +58,9 @@ class LootRoom(MapTile):
         player.inventory.append(self.item)
 
     def modify_player(self, player):
-        self.add_loot(player)
+        if self.is_loot is False:
+            self.is_loot = True
+            self.add_loot(player)
 
 
 class LeaveCaveRoom(MapTile):
@@ -79,10 +82,25 @@ class EnemyRoom(MapTile):
         self.enemy = enemy
         super().__init__(x, y)
 
-    def modify_player(self, the_player):
+    def modify_player(self, player):
         if self.enemy.is_alive():
-            the_player.hp = the_player.hp - self.enemy.damage
-            print("Enemy does {} damage. You have {} HP remaining.".format(self.enemy.damage, the_player.hp))
+            hit_roll = dice.roll(20)
+            print("{} rolled a {} to attack".format(self.enemy.name, hit_roll))
+            hit_plus_bonus = hit_roll + self.enemy.bonus_to_hit
+            print("{} has {} to hit your AC of {}.".format(self.enemy.name, hit_plus_bonus, player.armor_class))
+            if hit_plus_bonus >= player.armor_class:
+                damage1 = dice.roll(self.enemy.damage_die1, self.enemy.dam_die_num1) + self.enemy.damage_bonus1
+                if self.enemy.dam_die_num1 == 0:
+                    damage2 = 0
+                else:
+                    damage2 = dice.roll(self.enemy.damage_die2, self.enemy.dam_die_num2) + self.enemy.damage_bonus2
+                damage_total = damage1 +damage2
+                player.hp = player.hp - damage_total
+                print("\033[33m{} does {} damage.\033[0m You have {} HP remaining.".format(self.enemy.name,
+                                                                            damage_total,
+                                                                            player.hp))
+            else:
+                print("{}'s attack misses.".format(self.enemy.name))
 
     def available_actions(self):
         if self.enemy.is_alive():
@@ -133,6 +151,7 @@ class OgreRoom(EnemyRoom):
     def __init__(self, x, y):
         super().__init__(x, y, enemies.Ogre())\
 
+
     def intro_text(self):
         if self.enemy.is_alive():
             return """
@@ -146,7 +165,7 @@ class OgreRoom(EnemyRoom):
 
 class BearRoom(EnemyRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, enemies.Bear())\
+        super().__init__(x, y, enemies.BlackBear())\
 
 
     def intro_text(self):
@@ -159,15 +178,16 @@ class BearRoom(EnemyRoom):
             The body of a dead bear lies in the corner. If you are lost too long you might need to make a coat.
             """
 
-class FindGoldRoom(MapTile):
-    def __init__(self, x, y):
-        super().__init__(x, y)
+
+class FindGoldRoom(LootRoom):
+    def __init__(self, x, y, is_loot):
+        super().__init__(x, y, is_loot)
 
     def modify_player(self, player):
         if self.is_loot:
             pass
         else:
-            player.gold +=5
+            player.gold += 5
 
     def intro_text(self):
         if self.is_loot:
@@ -175,7 +195,6 @@ class FindGoldRoom(MapTile):
             Another unremarkable part of the cave. You must forge onwards.
             """
         else:
-            self.is_loot = True
             return """
             You see some gold in the corner of the room.
             You found 5 gold.
@@ -189,10 +208,10 @@ class FindDaggerRoom(LootRoom):
     def intro_text(self):
         if self.is_loot:
             return """
-            The shadows dance on the cave walls and remind you why you don't like caves.
+            The shadows dance on the cave walls.
+            This reminds you why you don't like caves.
             """
         else:
-            self.is_loot = True
             return """
             You notice something shiny in the corner.
             It's a dagger! You pick it up.
