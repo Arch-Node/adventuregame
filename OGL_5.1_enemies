@@ -1,0 +1,538 @@
+------------------------------------------------------------
+Stirge
+Tiny beast, unaligned
+Armor Class 14 (natural	armor)
+Hit	Points 2 (1d4)
+Speed 10 ft., fly 40 ft.
+
+STR 4 (-3)
+DEX 16 (+3)
+CON 11 (+0)
+INT 2 (−4)
+WIS 8 (−1)
+CHA 6 (−2)
+
+Senses darkvision 60 ft., passive Perception 9
+Challenge 1/8 (25 XP)
+Actions
+Blood Drain. Melee Weapon Attack: +5 to	hit, reach 5 ft., one creature.	Hit: 5 (1d4	+ 3) piercing damage, and the stirge attaches to the target. While attached, the stirge	doesn’t	attack.	Instead, at	the	start of each of the stirge’s turns, the target	loses 5	(1d4 + 3) hit points due to	blood loss.
+The	stirge can detach itself by spending 5 feet of its movement. It	does so	after it drains	10 hit points of blood from	the	target or the target dies. A creature, including the target, can use its action	to detach the stirge.
+
+------------------------------------------------------------
+Darkmantle
+Small monstrosity, unaligned
+Armor Class 11
+Hit Points 22 (5d6 + 5)
+Speed 10 ft., fly 30 ft.
+
+STR 16 (+3)
+DEX 12 (+1)
+CON 13 (+1)
+INT 2 (−4)
+WIS 10 (+0)
+CHA 5 (−3)
+
+Skills Stealth +3
+Senses blindsight 60 ft., passive Perception 10
+Challenge 1/2 (100 XP)
+Echolocation. The darkmantle can’t use its blindsight while deafened.
+False Appearance. While the darkmantle remains motionless, it is indistinguishable from a cave formation such as a stalactite or stalagmite.
+Actions
+Crush. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to the target. If the target is Medium or smaller and the darkmantle has advantage on the attack roll, it attaches by engulfing the target’s head, and the target is also blinded and unable to breathe while the darkmantle is attached in this way.
+While attached to the target, the darkmantle can attack no other creature except the target but has advantage on its attack rolls. The darkmantle’s speed also becomes 0, it can’t benefit from any bonus to its speed, and it moves with the target.
+A creature can detach the darkmantle by making a successful DC 13 Strength check as an action. On its turn, the darkmantle can detach itself from the target by	using 5 feet of movement.
+Darkness Aura (1/Day). A 15-foot radius of magical darkness extends out from the darkmantle, moves with it, and spreads around corners. The darkness lasts as long as the darkmantle maintains concentration, up to 10 minutes (as if concentrating on a spell). Darkvision can’t penetrate this darkness, and no natural light can illuminate it. If any of the darkness overlaps with an area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled.
+
+------------------------------------------------------------
+Violet Fungus
+Medium plant, unaligned
+Armor Class 5
+Hit Points 18 (4d8)
+Speed 5 ft.
+
+STR 3 (−4)
+DEX 1 (−5)
+CON 10 (+0)
+INT 1 (−5)
+WIS 3 (−4)
+CHA 1 (−5)
+
+Condition Immunities blinded, deafened, frightened
+Senses blindsight 30 ft. (blind beyond this radius), passive Perception 6
+Challenge 1/4 (50 XP)
+False Appearance. While the violet fungus remains motionless, it is indistinguishable from an ordinary fungus.
+Actions
+Multiattack. The fungus makes 1d4 Rotting Touch attacks.
+Rotting	Touch. Melee Weapon Attack: +2 to hit, reach 10 ft., one creature. Hit: 4 (1d8) necrotic damage.
+
+------------------------------------------------------------
+Goblin
+Small humanoid (goblinoid), neutral evil
+Armor Class 15 (leather armor, shield)
+Hit Points 7 (2d6)
+Speed 30 ft.
+
+STR 8 (−1)
+DEX 14 (+2)
+CON 10 (+0)
+INT 10 (+0)
+WIS 8 (−1)
+CHA 8 (−1)
+
+Skills Stealth +6
+Senses darkvision 60 ft., passive Perception 9
+Languages Common, Goblin
+Challenge 1/4 (50 XP)
+Nimble Escape. The goblin can take the Disengage or Hide action as a bonus action on each of its turns. 
+Actions 
+Scimitar. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.
+Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+------------------------------------------------------------
+Grimlock
+Medium humanoid (grimlock), neutral evil
+Armor Class 11
+Hit Points 11 (2d8 + 2)
+Speed 30 ft.
+
+STR 16 (+3)
+DEX 12 (+1)
+CON 12 (+1)
+INT 9 (−1)
+WIS 8 (−1)
+CHA 6 (−2)
+
+Skills Athletics +5, Perception +3, Stealth +3
+Condition Immunities blinded
+Senses blindsight 30 ft. or 10 ft. while deafened (blind beyond this radius), passive Perception 13
+Languages Undercommon
+Challenge 1/4 (50 XP)
+Blind Senses. The grimlock can’t use its blindsight while deafened and unable to smell.
+Keen Hearing and Smell. The grimlock has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+Stone Camouflage. The grimlock has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+Actions
+Spiked Bone Club. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage.
+
+------------------------------------------------------------
+Hobgoblin
+Medium humanoid (goblinoid), lawful evil
+Armor Class 18 (chain mail, shield)
+Hit Points 11 (2d8 + 2)
+Speed 30 ft.
+
+STR 13 (+1)
+DEX 12 (+1)
+CON 12 (+1)
+INT 10 (+0)
+WIS 10 (+0)
+CHA 9 (−1)
+
+Senses darkvision 60 ft., passive Perception 10
+Languages Common, Goblin
+Challenge 1/2 (100 XP)
+Martial Advantage. Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn’t incapacitated.
+Actions
+Longsword. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands.
+Longbow. Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
+
+------------------------------------------------------------
+Kobold
+Small humanoid (kobold), lawful evil
+Armor Class 12
+Hit Points 5 (2d6 − 2)
+Speed 30 ft.
+
+STR 7 (−2)
+DEX 15 (+2)
+CON 9 (−1)
+INT 8 (−1)
+WIS 7 (−2)
+CHA 8 (−1)
+
+Senses darkvision 60 ft., passive Perception 8
+Languages Common, Draconic
+Challenge 1/8 (25 XP)
+Sunlight Sensitivity. While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+Pack Tactics. The kobold has advantage on an attack roll against a creature if at least one of the kobold’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+Actions
+Dagger. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.
+Sling. Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.
+
+------------------------------------------------------------
+Lizardfolk
+Medium humanoid (lizardfolk), neutral
+Armor Class 15 (natural armor, shield)
+Hit Points 22 (4d8 + 4)
+Speed 30 ft., swim 30 ft.
+
+STR 15 (+2)
+DEX 10 (+0)
+CON 13 (+1)
+INT 7 (−2)
+WIS 12 (+1)
+CHA 7 (−2)
+
+Skills Perception +3, Stealth +4, Survival +5
+Senses passive Perception 13
+Languages Draconic
+Challenge 1/2 (100 XP)
+Hold Breath. The lizardfolk can hold its breath for 15 minutes.
+Actions
+Multiattack. The lizardfolk makes two melee attacks, each one with a different weapon.
+Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+Heavy Club. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.
+Javelin. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+Spiked Shield. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+------------------------------------------------------------
+Dust Mephit
+Small elemental, neutral evil
+Armor Class 12
+Hit Points 17 (5d6)
+Speed 30 ft., fly 30 ft.
+
+STR 5 (−3)
+DEX 14 (+2)
+CON 10 (+0)
+INT 9 (−1)
+WIS 11 (+0)
+CHA 10 (+0)
+
+Skills Perception +2, Stealth +4
+Damage Vulnerabilities fire
+Damage Immunities poison
+Condition Immunities poisoned
+Senses darkvision 60 ft., passive Perception 12
+Languages Auran, Terran
+Challenge 1/2 (100 XP)
+Death Burst. When the mephit dies, it explodes in a burst of dust. Each creature within 5 feet of it must then succeed on a DC 10 Constitution saving throw or be blinded for 1 minute. A blinded creature can repeat the saving throw on each of its turns, ending the effect on itself on a success.
+Innate Spellcasting (1/Day). The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma.
+Actions
+Claws. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.
+Blinding Breath (Recharge 6). The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+------------------------------------------------------------
+Merfolk
+Medium humanoid (merfolk), neutral
+Armor Class 11
+Hit Points 11 (2d8 + 2)
+Speed 10 ft., swim 40 ft.
+
+STR 10 (+0)
+DEX 13 (+1)
+CON 12 (+1)
+INT 11 (+0)
+WIS 11 (+0)
+CHA 12 (+1)
+
+Skills Perception +2
+Senses passive Perception 12
+Languages Aquan, Common
+Challenge 1/8 (25 XP)
+Amphibious. The merfolk can breathe air and water.
+Actions
+Spear. Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.
+
+------------------------------------------------------------
+Orc
+Medium humanoid (orc), chaotic evil
+Armor Class 13 (hide armor)
+Hit Points 15 (2d8 + 6)
+Speed 30 ft.
+
+STR 16 (+3)
+DEX 12 (+1)
+CON 16 (+3)
+INT 7 (−2)
+WIS 11 (+0)
+CHA 10 (+0)
+
+Skills Intimidation +2
+Senses darkvision 60 ft., passive Perception 10
+Languages Common, Orc
+Challenge 1/2 (100 XP)
+Aggressive. As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.
+Actions
+Greataxe. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.
+Javelin. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.
+
+------------------------------------------------------------
+Sahuagin
+Medium humanoid (sahuagin), lawful evil
+Armor Class 12 (natural armor)
+Hit Points 22 (4d8 + 4)
+Speed 30 ft., swim 40 ft.
+
+STR 13 (+1)
+DEX 11 (+0)
+CON 12 (+1)
+INT 12 (+1)
+WIS 13 (+1)
+CHA 9 (−1)
+
+Skills Perception +5
+Senses darkvision 120 ft., passive Perception 15
+Languages Sahuagin
+Challenge 1/2 (100 XP)
+Blood Frenzy. The sahuagin has advantage on melee attack rolls against any creature that doesn’t have all its hit points.
+Limited	Amphibiousness. The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.
+Shark Telepathy. The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy.
+Actions
+Multiattack. The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.
+Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.
+Claws. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.
+Spear. Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
+
+------------------------------------------------------------
+Skeleton
+Medium undead, lawful evil
+Armor Class 13 (armor scraps)
+Hit Points 13 (2d8 + 4)
+Speed 30 ft.
+
+STR 10 (+0)
+DEX 14 (+2)
+CON 15 (+2)
+INT 6 (−2)
+WIS 8 (−1)
+CHA 5 (−3)
+
+Damage Vulnerabilities bludgeoning
+Damage Immunities poison
+Condition Immunities exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 9
+Languages understands all languages it knew in life but can’t speak
+Challenge 1/4 (50 XP)
+Actions
+Shortsword. Melee Weapon Attack: +4 to hit, reach 5	ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+Shortbow. Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+
+------------------------------------------------------------
+Warhorse Skeleton
+Large undead, lawful evil
+Armor Class 13 (barding scraps)
+Hit Points 22 (3d10 + 6)
+Speed 60 ft.
+
+STR 18 (+4)
+DEX 12 (+1)
+CON 15 (+2)
+INT 2 (−4)
+WIS 8 (−1)
+CHA 5 (−3)
+
+Damage Vulnerabilities bludgeoning
+Damage Immunities poison
+Condition Immunities exhaustion, poisoned
+Senses darkvision 60 ft., passive Perception 9
+Challenge 1/2 (100 XP)
+Actions
+Hooves. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.
+
+------------------------------------------------------------
+Zombie
+Medium undead, neutral evil
+Armor Class 8
+Hit Points 22 (3d8 + 9)
+Speed 20 ft.
+
+STR 13 (+1)
+DEX 6 (−2)
+CON 16 (+3)
+INT 3 (−4)
+WIS 6 (−2)
+CHA 5 (−3)
+
+Saving Throws Wis +0
+Damage Immunities poison
+Condition Immunities poisoned
+Senses darkvision 60 ft., passive Perception 8
+Languages understands the languages it knew in life but can’t speak
+Challenge 1/4 (50 XP)
+Undead Fortitude. If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
+Actions
+Slam. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.
+
+------------------------------------------------------------
+Giant Poisonous Snake
+Medium beast, unaligned
+Armor Class 14
+Hit Points 11 (2d8 + 2)
+Speed 30 ft., swim 30 ft.
+
+STR 10 (+0)
+DEX 18 (+4)
+CON 13 (+1)
+INT 2 (−4)
+WIS 10 (+0)
+CHA 3 (−4)
+
+Skills Perception +2
+Senses blindsight 10 ft., passive Perception 12
+Challenge 1/4 (50 XP)
+Actions
+Bite. Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
+
+------------------------------------------------------------
+Bandit
+Medium humanoid (any race), any non-lawful alignment
+Armor Class 12 (leather armor)
+Hit Points 11 (2d8 + 2)
+Speed 30 ft.
+
+STR 11 (+0)
+DEX 12 (+1)
+CON 12 (+1)
+INT 10 (+0)
+WIS 10 (+0)
+CHA 10 (+0)
+
+Senses passive Perception 10
+Languages any one language (usually Common)
+Challenge 1/8 (25 XP)
+Actions
+Scimitar. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.
+Light Crossbow. Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.
+Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.
+Pirates are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation’s vessels.
+
+------------------------------------------------------------
+Acolyte
+Medium humanoid (any race), any alignment
+Armor Class 10
+Hit Points 9 (2d8)
+Speed 30 ft.
+STR 10 (+0)
+DEX 10 (+0)
+CON 10 (+0)
+INT 10 (+0)
+WIS 14 (+2)
+CHA 11 (+0)
+
+Skills Medicine +4, Religion +2
+Senses passive Perception 12
+Languages any one language (usually Common)
+Challenge 1/4 (50 XP)
+Spellcasting. The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:
+Cantrips (at will): light, sacred flame, thaumaturgy
+1st level (3 slots): bless, cure wounds, sanctuary
+Actions
+Club. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.
+Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
+
+------------------------------------------------------------
+Thug
+Medium humanoid (any race), any non-good alignment
+Armor Class 11 (leather armor)
+Hit Points 32 (5d8 + 10)
+Speed 30 ft.
+
+STR 15 (+2)
+DEX 11 (+0)
+CON 14 (+2)
+INT 10 (+0)
+WIS 10 (+0)
+CHA 11 (+0)
+
+Skills Intimidation +2
+Senses passive Perception 10
+Languages any one language (usually Common)
+Challenge 1/2 (100 XP)
+Pack Tactics. The thug has advantage on an attack roll against a creature if at least one of the thug’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+Actions
+Multiattack. The thug makes two melee attacks. 
+Mace. Melee Weapon Attack: +4 to hit, reach	5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.
+Heavy Crossbow. Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.
+Thugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.
+
+------------------------------------------------------------
+Tribal Warrior
+Medium humanoid (any race), any alignment
+Armor Class 12 (hide armor)
+Hit Points 11 (2d8 + 2)
+Speed 30 ft.
+
+STR 13 (+1)
+DEX 11 (+0)
+CON 12 (+1)
+INT 8 (−1)
+WIS 11 (+0)
+CHA 8 (−1)
+
+Senses passive Perception 10
+Languages any one language
+Challenge 1/8 (25 XP)
+Pack Tactics. The warrior has advantage on an attack roll against a creature if at least one of the warrior’s allies is within 5 feet of the creature and the ally isn’t incapacitated.
+Actions
+Spear. Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.
+Tribal warriors live beyond civilization, most often subsisting on fishing and hunting. Each tribe acts in accordance with the wishes of its chief, who is the greatest or oldest warrior of the tribe or a tribe member blessed by the gods
+
+------------------------------------------------------------
+Black Bear
+Medium beast, unaligned
+Armor Class 11 (natural armor)
+Hit Points 19 (3d8 + 6)
+Speed 40 ft., climb 30 ft.
+
+STR 15 (+2)
+DEX 10 (+0)
+CON 14 (+2)
+INT 2 (−4)
+WIS 12 (+1)
+CHA 7 (−2)
+
+Skills Perception +3
+Senses passive Perception 13
+Challenge 1/2 (100 XP)
+Keen Smell. The bear has advantage on Wisdom (Perception) checks that rely on smell.
+Actions
+Multiattack. The bear makes two attacks: one with its bite and one with its claws.
+Bite. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.
+Claws. Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.
+
+------------------------------------------------------------
+Ogre
+Large giant, chaotic evil
+Armor Class 11 (hide armor)
+Hit Points 59 (7d10 + 21)
+Speed 40 ft.
+
+STR 19 (+4)
+DEX 8 (−1)
+CON 16 (+3)
+INT 5 (−3)
+WIS 7 (−2)
+CHA 7 (−2)
+
+Senses darkvision 60 ft., passive Perception 8
+Languages Common, Giant
+Challenge 2 (450 XP)
+Actions
+Greatclub. Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.
+Javelin. Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage.
+
+------------------------------------------------------------
+Giant Spider
+Large beast, unaligned
+Armor Class 14 (natural armor)
+Hit Points 26 (4d10 + 4)
+Speed 30 ft., climb 30 ft.
+
+STR 14 (+2)
+DEX 16 (+3)
+CON 12 (+1)
+INT 2 (−4)
+WIS 11 (+0)
+CHA 4 (−3)
+
+Skills Stealth +7
+Senses blindsight 10 ft., darkvision 60	ft., passive Perception 10
+Challenge 1 (200 XP)
+Spider Climb. The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+Web Sense. While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.
+Web Walker. The spider ignores movement restrictions caused by webbing.
+Actions
+Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.
+Web (Recharge 5–6). Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an
+action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp	5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).
+To snare its prey, a giant spider spins elaborate webs or shoots sticky strands of webbing from its abdomen. Giant spiders are most commonly found underground, making their lairs on ceilings or in dark, web-filled crevices. Such lairs are often festooned with web cocoons holding past victims.
