@@ -90,15 +90,15 @@ class EnemyRoom(MapTile):
             print("{} has {} to hit your AC of {}.".format(self.enemy.name, hit_plus_bonus, player.armor_class))
             if hit_plus_bonus >= player.armor_class:
                 damage1 = dice.roll(self.enemy.damage_die1, self.enemy.dam_die_num1) + self.enemy.damage_bonus1
-                if self.enemy.dam_die_num1 == 0:
+                if self.enemy.dam_die_num2 == 0:
                     damage2 = 0
                 else:
                     damage2 = dice.roll(self.enemy.damage_die2, self.enemy.dam_die_num2) + self.enemy.damage_bonus2
-                damage_total = damage1 +damage2
-                player.hp = player.hp - damage_total
+                damage_total = damage1 + damage2
+                player.hp = player.hp - damage_total 
                 print("\033[33m{} does {} damage.\033[0m You have {} HP remaining.".format(self.enemy.name,
-                                                                            damage_total,
-                                                                            player.hp))
+                                                                                           damage_total,
+                                                                                           player.hp))
             else:
                 print("{}'s attack misses.".format(self.enemy.name))
 
