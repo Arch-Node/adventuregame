@@ -33,6 +33,7 @@ class MapTile:
         """Returns all of the available actions in this room."""
         moves = self.adjacent_moves()
         moves.append(actions.ViewInventory())
+        moves.append(actions.Wait())
         return moves
 
 
@@ -106,7 +107,10 @@ class EnemyRoom(MapTile):
         if self.enemy.is_alive():
             return [actions.Flee(tile=self), actions.Attack(enemy=self.enemy)]
         else:
-            return self.adjacent_moves()
+            actions1 = self.adjacent_moves()
+            actions1.append(actions.ViewInventory())
+            actions1.append(actions.Wait())
+            return actions1
 
 
 class EmptyCavePath(MapTile):
@@ -130,6 +134,36 @@ class SpringRoom(MapTile):
     def modify_player(self, player):
         player.hp += 5
         print("The water heals 5 damage. You have {} HP.".format(player.hp))
+
+
+class GiantSnakeRoom(EnemyRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, enemies.GiantPoisonousSnake())
+
+    def intro_text(self):
+        if self.enemy.is_alive():
+            return """
+            A giant slithers down from the rocks above!
+            """
+        else:
+            return """
+            The corpse of a dead snake rots on the ground.
+            """
+
+
+class KoboldRoom(EnemyRoom):
+    def __init__(self, x, y):
+        super().__init__(x, y, enemies.Kobold())
+
+    def intro_text(self):
+        if self.enemy.is_alive():
+            return """
+            A kobold creeps out from the rocks!
+            """
+        else:
+            return """
+            The corpse of a Kobold rots on the ground.
+            """
 
 
 class GiantSpiderRoom(EnemyRoom):

@@ -15,9 +15,10 @@ class Item:
 class Copper(Item):
     def __init__(self, amt):
         self.amt = amt
+        self.value = amt/10
         super().__init__(name="Copper",
-                         description="Coins worth {} copper.".format(str(self.amt)),
-                         value=self.amt)
+                         description="Coins worth {} copper.".format(str(self.value)),
+                         value=self.value)
 
 
 class Silver(Item):

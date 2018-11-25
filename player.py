@@ -13,10 +13,10 @@ class Player:
             intelligence=dice.roll(6, 3),
             wisdom=dice.roll(6, 3),
             charisma=dice.roll(6, 3)):
-        self.level = 1
-        self.xp = 0
-        self.copper = 10
-        self.silver = 0
+        self.level = 3
+        self.xp = 900
+        self.copper = dice.roll(10, 2)
+        self.silver = dice.roll(6, 1)
         self.gold = 0
         self.strength = strength
         self.dexterity = dexterity
@@ -24,21 +24,22 @@ class Player:
         self.intelligence = intelligence
         self.wisdom = wisdom
         self.charisma = charisma
-        if self.strength < 8:
-            self.strength = 8
-        if self.dexterity < 8:
-            self.dexterity = 8
-        if self.constitution < 10:
-            self.constitution = 10
-        if self.intelligence < 8:
-            self.intelligence = 8
-        if self.wisdom < 8:
-            self.wisdom = 8
-        if self.charisma < 8:
-            self.charisma = 8
-        self.hp = 100
-        self.armor_class = 10 + int((self.dexterity-10)/2)
-        self.inventory = [items.Copper(self.copper), items.Mace()]
+        if self.strength < 12:
+            self.strength = 12
+        if self.dexterity < 12:
+            self.dexterity = 12
+        if self.constitution < 12:
+            self.constitution = 12
+        if self.intelligence < 7:
+            self.intelligence = 7
+        if self.wisdom < 7:
+            self.wisdom = 7
+        if self.charisma < 7:
+            self.charisma = 7
+        self.max_hp = 10 + ((self.level - 1)*6) + int((self.constitution-10)/2)
+        self.hp = self.max_hp
+        self.armor_class = 11 + int((self.dexterity-10)/2)
+        self.inventory = [items.Copper(self.copper), items.Mace(), items.Silver(self.silver)]
         self.location_x, self.location_y = world.starting_position
         self.victory = False
 
@@ -66,6 +67,27 @@ class Player:
     def move_west(self):
         self.move(dx=-1, dy=0)
 
+    def wait(self):
+        if dice.roll(6, 1) > 1:
+            heal = dice.roll(6, 1)
+            # print("HP: {}/{}, Heal: {}".format(self.hp, self.max_hp, heal))
+            if self.max_hp >= self.hp:
+                hp_to_heal = self.max_hp - self.hp
+                if hp_to_heal == 0:
+                    print("Time passes")
+                else:
+                    if hp_to_heal >= heal:
+                        self.hp += heal
+                        print("You heal {} hit points.".format(heal))
+                    else:
+                        reduced_heal = hp_to_heal
+                        self.hp += reduced_heal
+                        print("You heal {} hit points.".format(reduced_heal))
+            else:
+                print("Time Passes")
+        else:
+            print("Time passes.")
+
     def attack(self, enemy):
         best_weapon = None
         weapon_list = {}
@@ -88,7 +110,11 @@ class Player:
             if not enemy.is_alive():
                 print("You killed the {}!".format(enemy.name))
                 self.xp += enemy.xp
+                self.copper += enemy.copper
+                self.silver += enemy.silver
                 print("You gained {} xp and have a total of {} xp.".format(enemy.xp, self.xp))
+                if enemy.copper or enemy.silver != 0:
+                    print("You gained: {}cp, {}sp, {}gp".format(enemy.copper, enemy.silver, enemy.gold))
             else:
                 print("{} HP is {}".format(enemy.name, enemy.hp))
         else:

@@ -26,7 +26,10 @@ class Enemy:
                  wisdom,
                  charisma,
                  xp,
-                 cr
+                 cr,
+                 copper,
+                 silver,
+                 gold
                  ):
         self.name = name
         self.size = size
@@ -52,6 +55,9 @@ class Enemy:
         self.charisma = charisma
         self.xp = xp
         self.cr = cr
+        self.copper = copper
+        self.silver = silver
+        self.gold = gold
 
     def is_alive(self):
         return self.hp > 0
@@ -83,7 +89,10 @@ class GiantSpider(Enemy):
             wisdom=11,
             charisma=4,
             xp=450,
-            cr=2
+            cr=2,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -113,7 +122,10 @@ class Ogre(Enemy):
             wisdom=7,
             charisma=7,
             xp=450,
-            cr=2
+            cr=2,
+            copper=dice.roll(12, 5),
+            silver=dice.roll(10, 3),
+            gold=1
         )
 
 
@@ -143,7 +155,10 @@ class BlackBear(Enemy):
             wisdom=12,
             charisma=7,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -173,7 +188,10 @@ class Stirge(Enemy):
             wisdom=8,
             charisma=6,
             xp=25,
-            cr=.125
+            cr=.125,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -203,7 +221,10 @@ class Darkmantle(Enemy):
             wisdom=10,
             charisma=5,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -233,7 +254,10 @@ class VioletFungus(Enemy):
             wisdom=3,
             charisma=1,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -263,7 +287,10 @@ class Goblin(Enemy):
             wisdom=8,
             charisma=8,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=0,
+            silver=dice.roll(12, 5),
+            gold=0
         )
 
 
@@ -293,7 +320,10 @@ class Grimlock(Enemy):
             wisdom=8,
             charisma=6,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -323,7 +353,10 @@ class Hobgoblin(Enemy):
             wisdom=10,
             charisma=9,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=dice.roll(10, 2) + 3,
+            gold=0
         )
 
 
@@ -353,7 +386,10 @@ class Kobold(Enemy):
             wisdom=7,
             charisma=8,
             xp=25,
-            cr=.125
+            cr=.125,
+            copper=dice.roll(10, 3) + 3,
+            silver=0,
+            gold=0
         )
 
 
@@ -383,7 +419,10 @@ class Lizardfolk(Enemy):
             wisdom=12,
             charisma=7,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=dice.roll(6, 2) + 2,
+            gold=0
         )
 
 
@@ -413,7 +452,10 @@ class DustMephit(Enemy):
             wisdom=11,
             charisma=10,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -443,7 +485,10 @@ class Merfolk(Enemy):
             wisdom=11,
             charisma=12,
             xp=25,
-            cr=.125
+            cr=.125,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -473,7 +518,10 @@ class Orc(Enemy):
             wisdom=11,
             charisma=10,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=dice.roll(12, 3) + 2,
+            gold=0
         )
 
 
@@ -503,7 +551,10 @@ class Sahuagin(Enemy):
             wisdom=13,
             charisma=9,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=7,
+            gold=0
         )
 
 
@@ -533,7 +584,10 @@ class Skeleton(Enemy):
             wisdom=8,
             charisma=5,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=2,
+            silver=4,
+            gold=0
         )
 
 
@@ -563,7 +617,10 @@ class WarhorseSkeleton(Enemy):
             wisdom=8,
             charisma=5,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -593,7 +650,10 @@ class Zombie(Enemy):
             wisdom=6,
             charisma=5,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=0,
+            silver=3,
+            gold=0
         )
 
 
@@ -623,7 +683,10 @@ class GiantPoisonousSnake(Enemy):
             wisdom=10,
             charisma=3,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=0,
+            silver=0,
+            gold=0
         )
 
 
@@ -653,7 +716,10 @@ class Bandit(Enemy):
             wisdom=10,
             charisma=10,
             xp=25,
-            cr=.125
+            cr=.125,
+            copper=0,
+            silver=12,
+            gold=0
         )
 
 
@@ -683,7 +749,10 @@ class Acolyte(Enemy):
             wisdom=14,
             charisma=11,
             xp=50,
-            cr=.25
+            cr=.25,
+            copper=3,
+            silver=0,
+            gold=0
         )
 
 
@@ -713,7 +782,10 @@ class Thug(Enemy):
             wisdom=10,
             charisma=11,
             xp=100,
-            cr=.5
+            cr=.5,
+            copper=0,
+            silver=15,
+            gold=0
         )
 
 
@@ -743,5 +815,8 @@ class TribalWarrior(Enemy):
             wisdom=11,
             charisma=8,
             xp=25,
-            cr=.125
+            cr=.125,
+            copper=7,
+            silver=4,
+            gold=0
         )
